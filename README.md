@@ -8,7 +8,7 @@ If you find this plugin useful, feel free to upvote the question so that more pe
 
 ## Adding the Plugin to your project ##
 
-$ cordova plugin add https://github.com/chrisekelley/Version.git
+$ cordova plugin add https://github.com/jzarnikov/Cordova-SDKVersion.git
 
 ## Using the plugin ##
 
