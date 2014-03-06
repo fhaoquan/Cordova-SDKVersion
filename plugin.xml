@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
+        id="org.apache.cordova.plugin.androidsdkversion"
+        version="0.1.0">
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+    <name>Android SDKV ersion</name>
+    <description>Cordova AndroidSDKVersion Plugin</description>
+
+
+    <js-module src="www/androidSDKVersion.js" name="androidSDKVersion">
+        <clobbers target="AndroidSDKVersion" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="AndroidSDKVersion">
+                <param name="android-package" value="org.apache.cordova.plugin.androidsdkversion" />
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/AndroidSDKVersion.java" target-dir="src/org/apache/cordova/plugin/androidsdkversion" />
+    </platform>
+</plugin>
